@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets_upPic/upPic.js" async></script>
+    <link rel="stylesheet" href="assets_upPic/upPic.css">
+  </head>
+
+  <body>
+
+    <h1>Upload Picture</h1>
+
+    <canvas id="picView" width="750" height="1167" style="border:1px solid #000000;"></canvas><br>
+
+    <form>
+      <h3>Upload/Take a picture</h3>
+      <input type="file" id="inputPic" accept="image/*" capture="camrea"><br>
+      <h3>Please choose a category</h3>
+      <button>Type1</button>
+      <button>Type2</button>
+      <button>Type3</button>
+      <button>Type4</button>
+      <button>Type5</button>
+      <button>Type6</button>
+      <button>Type7</button>
+      <button>Type8</button>
+      <h3>Input Title</h3>
+      <input id="inputTitle" type="text" name="title"><br>
+      <h3>Input price</h3>
+      <input id="inputCost" type="number" name="cost" min="0" required><br>
+      <h3>Input tags</h3>
+      <input id="inputTag" type="text" name="tags"><br><br>
+      <button id="addInfo" type="button">Confirm</button><br>
+    </form>
+
+  </body>
+
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/Proc.css" />
+
+    <!-- <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css"> -->
+</head>
+
+<body>
+    <div class="cont background" style="margin-top:150px;">
+        <div class="title">
+            <h1><span>Feedback</span></h1>
+        </div>
+    </div>
+    <div class="background">
+        <h3>How do you feel about this receipt?</h3>
+  <div class="stars">
+    <form action="">
+      <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+      <label class="star star-5" for="star-5-2"></label>
+      <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+      <label class="star star-4" for="star-4-2"></label>
+      <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+      <label class="star star-3" for="star-3-2"></label>
+      <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+      <label class="star star-2" for="star-2-2"></label>
+      <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+      <label class="star star-1" for="star-1-2"></label>
+    </form>
+  </div>
+</div>
+
+<div class="cont background">
+  <div class="textBox">
+    <h3>Anything you want to say?</h3></br>
+        <form action="">
+            <textarea name="Text1" cols="205" rows="10"></textarea></br>
+            </br>  
+        </form>
+        <button id="btn_click" onclick="alert('We have received your feedback!')"><a href="index.html">Submit</a></button>
+  </div>
+</div>
+
+<script>
+    $('#btn_click').on('click', function () {
+        console.log("Back???????????????????????????????????");
+        // preventDefault();
+        window.location = 'index.html';
+    })
+</script>
+
+</body>
+
+</html>

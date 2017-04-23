@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type='text/javascript' src="assets/js/createRecipe.js"></script>
+<link rel="stylesheet" href="assets/Proc.css" />
+
+<div class="background">
+    <ul>
+        <li><a class="active" href="/"><<</a></li>
+        <li><a href="#news">Search</a></li>
+        <li><a href="/contactUs">Contact Us</a></li>
+        <li><a href="/loginPage">SignIn</a></li>
+        <li><a href="/signupPage">SignUp</a></li>
+    </ul>
+<form action="action_page.php" >
+  <!-- <fieldset> -->
+    <h2>Upload Menu Page:</h2>
+    <p>Step 1:<br>
+    <input type="text" id="" value="">
+        <label>
+            <input type="checkbox"  id="trigger0" value="" onchange="valueChanged()">
+            <span>need timer</span>
+        </label>
+        <input type="number" id="timerSec0" placeholder="enter the timer time in seconds" style="display: none;" min ="0">
+    <br></p>
+    Step 2:<br>
+    <input type="text" id="" value=""/>
+        <label>
+            <input type="checkbox"  id="trigger1" value="" onchange="valueChanged()">
+            <span>need timer</span>
+        </label>
+        <input type="number" id="timerSec1" placeholder="enter the timer time in seconds" style="display: none;" min ="0">
+    <br><br>
+    Step 3:<br>
+    <input type="text" id="" value="">
+     <label>
+            <input type="checkbox" id="trigger2" value="" onchange="valueChanged()">
+            <span>need timer</span>
+        </label>
+        <input type="number" id="timerSec2" placeholder="enter the timer time in seconds" style="display: none;" min ="0">
+    <br><br>
+    Step 4:<br>
+    <input type="text" id="" value="">
+     <label>
+            <input type="checkbox" id="trigger3" value="" onchange="valueChanged()">
+            <span>need timer</span>
+        </label>
+        <input type="number" id="timerSec3" placeholder="enter the timer time in seconds" style="display: none;" min ="0">
+    <br><br>
+    <div class="input_fields_wrap">
+    Step 5:<br>
+    <div><input type="text" name="mytext[]">
+     <label>
+            <input type="checkbox" id="trigger4" value="" onchange="valueChanged()">
+            <span>need timer</span>
+        </label>
+        <input type="number"id="timerSec4" placeholder="enter the timer time in seconds" style="display: none;" min ="0">
+    </div>
+    <br>
+    </div>
+    <br><br>
+    <button class="add_field_button">Add More Fields</button>
+    <input class="add_field_button" type="button" id= "submit" value="Submit" onclick = "setData()">
+    <!-- <p>This is the menu enter page</p> -->
+  <!-- </fieldset> -->
+</form>
+</div>
+
+</body>
+</html>

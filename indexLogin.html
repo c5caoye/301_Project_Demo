@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="Cookwares" content="width=device-wodth, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Easy Recipe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/voice.js"></script> -->
+    <link rel="stylesheet" href="assets/css/firstPage.css" type="text/css">
+</head>
+
+<body>
+    <div class="alert alert-success" style="display: none;">
+        <strong>Success!</strong> 
+        <%= text %>
+    </div>
+    <h1>Easy Recipe</h1>
+
+    <div class="background">
+        <ul>
+            <li><a class="active" href="#home">My Recipes</a></li>
+            <li><a href="#news">Search</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
+            <li><a href="/createRecipe">Upload New Recipe</a></li>
+<!--             <li><a href="/loginPage">SignIn</a></li>
+            <li><a href="/signupPage">SignUp</a></li> -->
+        </ul>
+
+        <h2>Featured Recipes:</h2>
+        <hr>
+
+        <div class="card">
+            <img src="5842.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Pull Over Coffee<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="5842.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Pull Over Coffee<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="5842.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Pull Over Coffee<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="5842.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Pull Over Coffee<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="5842.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Pull Over Coffee<b></h4>
+            </div>
+        </div>
+
+
+
+        <script>
+            $('.card').on('click', function() {
+                window.location.href = '/Cookwares';
+            });
+        </script>
+
+    </div>
+
+</body>
+
+</html>

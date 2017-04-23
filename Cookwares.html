@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="Cookwares" content="width=device-wodth, initial-scale=1.0">
+    <title>Cookwares</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script>
+        $(document).ready(function() {
+            $("div.card").click(function() {
+                console.log('run');
+                $(this).css("background-color", "#A2D4AB");
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/Cookware.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <ul>
+            <li><a class="active" href="/"><<</a></li>
+            <li><a href="#news">Search</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
+            <li><a href="/createRecipe">Upload New Recipe</a></li>
+        </ul>
+        <h2>Cookwares you will need for this meal:</h2>
+        <hr>
+
+        <div class="card">
+            <img src="assets/kettle.png" class="cardPic">
+
+            <div class="container">
+                <h4><b>A Kettle<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/filter.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>Some Filters <b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/Dripper.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>A Dripper<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/Grinder.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>A Grinder<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/scale.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>A Food Scale<b></h4>
+            </div>
+        </div>
+
+
+        <form action="/Ingredients" method="get">
+            <button name="Ingredients" value="next">GOT THEM ALL!</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

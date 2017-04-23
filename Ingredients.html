@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="Ingredients" content="width=device-wodth, initial-scale=1.0">
+    <title>Ingredients</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script>
+        $(document).ready(function() {
+            $("div.card").click(function() {
+                console.log('run');
+                $(this).css("background-color", "#A2D4AB");
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/Cookware.css">
+
+    <style>
+    ul {
+        border-radius: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <ul>
+            <li>
+                <a class="active" href="/"><<</a>
+            </li>
+            <li><a href="#news">Search</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
+            <li><a href="/createRecipe">Upload New Recipe</a></li>
+        </ul>
+        <h2>Ingredients you will need for this meal:</h2>
+        <hr>
+
+        <div class="card">
+            <img src="assets/boilwater.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>600 grams (20oz) of boil water<b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/coffebeans.jpg" class="cardPic">
+
+            <div class="container">
+                <h4><b>30 grams of coffe beans (3 tbsp)<b></h4>
+            </div>
+        </div>
+
+<!--         <button onclick="window.location.href='index.html'">GOT THEM ALL!</button> -->
+        <form action="/start" method="get">
+            <button name="start" value="next">GOT THEM ALL!</button>
+        </form>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="SigninPage" content="width=device-wodth, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Change the style of the card -->
+    <script>
+        $(document).ready(function() {
+            $("div.card").click(function() {
+                console.log('run');
+                $(this).css("background-color", "#A2D4AB");
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/SignInUp.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <ul>
+            <li><a class="active" href="/"><<</a></li>
+            <li><a href="#news">Search</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
+            <li><a href="/createRecipe">Upload New Recipe</a></li>
+        </ul>
+        <h2>Sign Up for an account:</h2>
+        <hr>
+
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label id="username" for="usr">Username:</label>
+                <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="form-group">
+                <label id="password" for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" maxlength="8" name="pword">
+            </div>
+            <div class="form-group">
+                <label id="re-password" for="pwd">Re-enter Password:</label>
+                <input type="password" class="form-control" id="pwd" maxlength="8" name="rpword">
+            </div>
+            <div class="form-group">
+                <label id="email" for="usr">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <button id="clickMe" type="submit" value="signup">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
