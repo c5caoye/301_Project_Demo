@@ -11,8 +11,6 @@ var expressValidator = require("express-validator");
 var app = express();
 db.serialize();
 
-app.set('port', (process.env.PORT || 5000));
-
 // Set views path, template engine and default layout
 app.use(express.static(__dirname + '/assets'));
 app.use(express.static(__dirname + '/'));
@@ -162,6 +160,4 @@ function create_user(username, password, email) {
 
 
 
-// var server = app.listen(8000, function() {
-//   console.log('Running on 127.0.0.1:%s', server.address().port);
-// });
+var server = app.listen(process.env.PORT || 8000);
