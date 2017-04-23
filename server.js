@@ -111,7 +111,7 @@ app.post('/signup', function(req, res) {
     		});
         }
     });
-    
+
 });
 
 
@@ -149,11 +149,11 @@ app.post('/login', function(req,res) {
     		});
         }
     });
-	
+
 });
 function create_user(username, password, email) {
-    
-    
+
+
 }
 
 
